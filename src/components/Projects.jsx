@@ -1,7 +1,26 @@
 import './Projects.css';
+import { motion } from 'framer-motion'; // Import Framer Motion
+
+// Animation variants
+const cardVariants = {
+  offscreen: {
+    y: 50, // Start 50px down
+    opacity: 0
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8
+    }
+  }
+};
 
 const Projects = () => {
   const projects = [
+    // ... (keep your project array exactly as it was)
     {
       title: "CI/CD Pipeline Modernization",
       description: "Migrated CI/CD from Jenkins to GitLab CI for a 2M+ LOC monolith. Introduced parallelized Gradle builds and build caching, enabling self-service deployments.",
@@ -34,7 +53,14 @@ const Projects = () => {
         <h2>Key Projects</h2>
         <div className="projects-grid">
           {projects.map((project, index) => (
-            <div key={index} className="project-card">
+            <motion.div
+              key={index}
+              className="project-card"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.3 }} // Animate when 30% of the card is in view, only once
+              variants={cardVariants}
+            >
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <div className="project-technologies">
@@ -45,7 +71,7 @@ const Projects = () => {
               <div className="project-result">
                 <strong>Result:</strong> {project.result}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

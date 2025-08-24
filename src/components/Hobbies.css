@@ -1,0 +1,58 @@
+/* Hobbies.css */
+.hobbies-section {
+  padding: 5rem 2rem;
+  background-color: #1e293b;
+  color: #f8fafc;
+  text-align: center;
+}
+
+.hobbies-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hobbies-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #93c5fd;
+}
+
+.hobbies-section > p {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  color: #cbd5e1;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+}
+
+.hobby-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hobby-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #0ea5e9, #1d4ed8);
+  border-radius: 50%; /* This creates the circle */
+  font-size: 2rem;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.hobby-item:hover .hobby-icon-wrapper {
+  transform: scale(1.1) translateY(-5px); /* Adds a slight "lift" on hover */
+}
+
+.hobby-name {
+  font-weight: 500;
+}
