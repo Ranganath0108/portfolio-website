@@ -1,0 +1,82 @@
+/* Header.css */
+.portfolio-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
+}
+
+.header-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #f8fafc, #93c5fd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.header-content h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #cbd5e1;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #93c5fd;
+  font-style: italic;
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+  color: #cbd5e1;
+}
+
+.contact-info a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.header-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.header-links a {
+  color: #f8fafc;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #93c5fd;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.header-links a:hover {
+  background-color: #93c5fd;
+  color: #0f172a;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 2.5rem;
+  }
+  .header-content h2 {
+    font-size: 1.2rem;
+  }
+  .header-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
