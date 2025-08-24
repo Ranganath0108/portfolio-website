@@ -1,6 +1,8 @@
 import './Header.css';
+// Import your photo. Update the path and name to match your file.
 import profilePhoto from '../assets/profile-photo.jpeg';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+// Import Icons
+import { FaLinkedin, FaGithub, FaFileDownload } from 'react-icons/fa';
 
 const Header = () => {
   const taglines = [
@@ -22,19 +24,19 @@ const Header = () => {
         </div>
         {/* Text Content */}
         <h1>Ranganathaswamy Y S</h1>
-        <h2>Cloud-Native Java Engineer | DevOps-Savvy | Microservices & Automation</h2>
+        <h2> Cloud Native Engineer | Java & DevOps Specialist</h2>
+        
         
         {/* Catchy Quote */}
         <p className="catchy-quote">“I don't build services. I architect ecosystems.”</p>
         
         <p>{taglines[0]}</p>
-
         <div className="contact-info">
-          <a href="mailto:ranganathswamy.ys@gmail.com">ranganathswamy.ys@gmail.com</a>
-          <span> | </span>
-          <a href="tel:+919480282010">+91 9480282010</a>
-          <span> | </span>
-          <span>Bangalore, India</span>
+        <div className="contact-line">
+            <a href="mailto:ranganathswamy.ys@gmail.com">ranganathswamy.ys@gmail.com</a>
+            <a href="tel:+919480282010">+91 9480282010</a>
+            <span>Bangalore, India</span>
+        </div>
         </div>
 
         {/* Header Links with Icons */}
@@ -44,6 +46,11 @@ const Header = () => {
           </a>
           <a href="https://github.com/Ranganath0108" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub className="header-icon" />
+          </a>
+          {/* Resume Download Button */}
+          <a href="/Ranganathaswamy_Resume.pdf" download="Ranganathaswamy_Resume.pdf" className="resume-download" aria-label="Download Resume">
+            <FaFileDownload className="header-icon" />
+            <span>Resume</span>
           </a>
         </div>
       </div>

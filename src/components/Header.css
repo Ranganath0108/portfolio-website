@@ -68,7 +68,7 @@
 
 
 .catchy-quote {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-style: italic;
   color: #f8fafc;
   margin: 1.5rem 0;
@@ -77,22 +77,38 @@
 }
 
 .header-content p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 2rem;
   color: #93c5fd;
   font-style: italic;
 }
 
+/* Header.css - REPLACE the old .contact-info styles with this */
+
 .contact-info {
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-line {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on small screens */
+  justify-content: center;
+  gap: 1.5rem; /* Adds modern spacing between items instead of using '|' */
   color: #cbd5e1;
 }
 
-.contact-info a {
+.contact-line a, .contact-line span {
   color: #93c5fd;
   text-decoration: none;
+  font-size: 1rem;
+  white-space: nowrap; /* Prevents the text from breaking mid-email or mid-phone number */
 }
 
+.contact-line a:hover {
+  text-decoration: underline;
+}
 .contact-info a:hover {
   text-decoration: underline;
 }
@@ -154,4 +170,32 @@
     width: 150px;
     height: 150px;
   }
+}
+
+.resume-download {
+  display: flex !important; /* Override the circle style */
+  align-items: center;
+  gap: 0.5rem; /* Space between icon and text */
+  border-radius: 4px !important; /* Square corners instead of circle */
+  padding: 0.75rem 1.5rem !important; /* More horizontal padding */
+  text-decoration: none;
+}
+
+/* Hide the text on mobile to save space */
+@media (max-width: 768px) {
+  .resume-download span {
+    display: none;
+  }
+  .resume-download {
+    padding: 0.6rem !important; /* Revert to circular padding on mobile */
+    border-radius: 50% !important;
+  }
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Ensure all text inside is centered */
+  max-width: 90%; /* Prevent text from stretching too wide on large screens */
+  margin: 0 auto; /* Center the container itself */
 }
