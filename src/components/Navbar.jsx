@@ -15,6 +15,9 @@ const Navbar = () => {
         <span className="nav-logo">R.Y.S</span>
         <ul className="nav-menu">
           <li className="nav-item">
+            <a href="#home" onClick={() => scrollToSection('home')}>Home</a>
+          </li>
+          <li className="nav-item">
             <a href="#about" onClick={() => scrollToSection('about')}>About</a>
           </li>
           <li className="nav-item">

@@ -31,15 +31,35 @@
   100% { background-position: 0% 50%; }
 }
 
-.header-content h1 {
+.profile-img-container {
+  margin-bottom: 2rem;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Ensures the image fills the space without stretching */
+  border-radius: 50%; /* This creates the circle */
+  border: 4px solid #93c5fd; /* Adds a colored border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for depth */
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header-content h1 {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  margin-top: 0; /* Added this line */
   background: linear-gradient(45deg, #f8fafc, #93c5fd);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Adds depth */
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .header-content h2 {
