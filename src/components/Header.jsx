@@ -48,7 +48,7 @@ const Header = () => {
             <FaGithub className="header-icon" />
           </a>
           {/* Resume Download Button */}
-          <a href="/Ranganathaswamy_Resume.pdf" download="Ranganathaswamy_Resume.pdf" className="resume-download" aria-label="Download Resume">
+          <a href={`${import.meta.env.BASE_URL}Ranganathaswamy_Resume.pdf`} download="Ranganathaswamy_Resume.pdf" className="resume-download" aria-label="Download Resume">
             <FaFileDownload className="header-icon" />
             <span>Resume</span>
           </a>
