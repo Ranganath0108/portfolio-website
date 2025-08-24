@@ -31,6 +31,9 @@ return (
             <a href="#future" onClick={() => scrollToSection('future')}>Future</a>
           </li>
           <li className="nav-item">
+            <a href="#hobbies" onClick={() => scrollToSection('hobbies')}>Beyond Code</a>
+          </li> 
+          <li className="nav-item">
             <a href="#contact" onClick={() => scrollToSection('contact')}>Contact</a>
           </li>
         </ul>
