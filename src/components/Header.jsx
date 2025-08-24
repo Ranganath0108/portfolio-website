@@ -1,5 +1,6 @@
 import './Header.css';
 import profilePhoto from '../assets/profile-photo.jpeg';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Header = () => {
   const taglines = [
@@ -22,6 +23,10 @@ const Header = () => {
         {/* Text Content */}
         <h1>Ranganathaswamy Y S</h1>
         <h2>Cloud-Native Java Engineer | DevOps-Savvy | Microservices & Automation</h2>
+        
+        {/* Catchy Quote */}
+        <p className="catchy-quote">“I don't build services. I architect ecosystems.”</p>
+        
         <p>{taglines[0]}</p>
 
         <div className="contact-info">
@@ -32,9 +37,14 @@ const Header = () => {
           <span>Bangalore, India</span>
         </div>
 
+        {/* Header Links with Icons */}
         <div className="header-links">
-          <a href="https://linkedin.com/in/ranganathaswamys" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://github.com/Ranganath0108" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/ranganathaswamys" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <FaLinkedin className="header-icon" />
+          </a>
+          <a href="https://github.com/Ranganath0108" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <FaGithub className="header-icon" />
+          </a>
         </div>
       </div>
     </header>

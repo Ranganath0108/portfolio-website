@@ -41,7 +41,6 @@
   color: #93c5fd;
 }
 
-/* Responsive design for mobile - we'll handle this later */
 @media (max-width: 768px) {
   .nav-menu {
     gap: 1rem;

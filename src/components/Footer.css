@@ -32,7 +32,6 @@
   text-decoration: underline;
 }
 
-/* Responsive design for mobile */
 @media (max-width: 768px) {
   .site-footer {
     padding: 1.5rem;
