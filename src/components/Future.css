@@ -1,0 +1,94 @@
+/* Future.css */
+.future-section {
+  padding: 5rem 2rem;
+  background-color: #0f172a; /* Dark background to match header/skills */
+  color: #f8fafc;
+}
+
+.future-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.future-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #93c5fd; /* Light blue accent color */
+}
+
+.future-intro {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #cbd5e1; /* Soft white for text */
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.future-intro strong {
+  color: #93c5fd;
+  font-weight: 600;
+}
+
+.future-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.future-item {
+  background: linear-gradient(145deg, #1e293b, #334155); /* Subtle gradient */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: 1px solid #334155;
+}
+
+.future-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  border-color: #93c5fd;
+}
+
+.future-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #f8fafc;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.future-item p {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .future-section {
+    padding: 3rem 1rem;
+  }
+  
+  .future-section h2 {
+    font-size: 2rem;
+  }
+  
+  .future-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .future-item {
+    padding: 1.5rem;
+  }
+  
+  .future-item h3 {
+    font-size: 1.2rem;
+  }
+}

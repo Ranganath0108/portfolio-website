@@ -46,3 +46,24 @@
     gap: 1rem;
   }
 }
+
+.nav-logo {
+  /* Remove any existing text styles from .nav-logo */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-avatar {
+  width: 40px; /* Perfect size for a nav avatar */
+  height: 40px;
+  object-fit: cover; /* Ensures the image fills the space without stretching */
+  border-radius: 50%; /* This creates the circle */
+  border: 2px solid #93c5fd;
+  transition: all 0.3s ease;
+}
+
+.nav-avatar:hover {
+  border-color: #f8fafc; /* Changes border color on hover for feedback */
+  transform: scale(1.05); /* Subtle "pop" effect on hover */
+}

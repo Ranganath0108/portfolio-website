@@ -1,4 +1,5 @@
 import './Navbar.css';
+import navAvatar from '../assets/nav-avatar.jpg'; 
 
 const Navbar = () => {
   // Function to handle smooth scrolling
@@ -9,14 +10,14 @@ const Navbar = () => {
     }
   };
 
-  return (
+return (
     <nav className="navbar">
       <div className="nav-container">
-        <span className="nav-logo">R.Y.S</span>
+        {/* Replace text logo with Avatar */}
+        <a href="#home" onClick={() => scrollToSection('home')} className="nav-logo">
+          <img src={navAvatar} alt="Home - Ranganathaswamy Y S" className="nav-avatar" />
+        </a>
         <ul className="nav-menu">
-          <li className="nav-item">
-            <a href="#home" onClick={() => scrollToSection('home')}>Home</a>
-          </li>
           <li className="nav-item">
             <a href="#about" onClick={() => scrollToSection('about')}>About</a>
           </li>
@@ -27,7 +28,7 @@ const Navbar = () => {
             <a href="#projects" onClick={() => scrollToSection('projects')}>Projects</a>
           </li>
           <li className="nav-item">
-            <a href="#hobbies" onClick={() => scrollToSection('hobbies')}>Beyond Code</a>
+            <a href="#future" onClick={() => scrollToSection('future')}>Future</a>
           </li>
           <li className="nav-item">
             <a href="#contact" onClick={() => scrollToSection('contact')}>Contact</a>

@@ -5,8 +5,10 @@ import Skills from './components/Skills';
 import Hobbies from './components/Hobbies';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Future from './components/Future';
 import Footer from './components/Footer';
 import './App.css'
+import { i } from 'framer-motion/client';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
       <Skills />
       <Hobbies />
       <Projects />
+      <Future /> 
       <Contact /> 
       <Footer />
     </>
