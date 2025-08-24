@@ -23,3 +23,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600; /* Makes headings bolder in Poppins */
 }
+
+
+html {
+  scroll-padding-top: 70px; /* Adjust this value to the height of your navbar */
+}

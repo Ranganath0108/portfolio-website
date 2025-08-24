@@ -1,0 +1,49 @@
+/* Navbar.css */
+.navbar {
+  position: fixed; /* Fixes the navbar to the top of the viewport */
+  top: 0;
+  width: 100%;
+  background-color: rgba(15, 23, 42, 0.95); /* Semi-transparent dark background */
+  backdrop-filter: blur(10px); /* Adds a frosted glass effect */
+  z-index: 1000; /* Ensures it stays on top of other content */
+  padding: 0.5rem 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #93c5fd;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-item a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #93c5fd;
+}
+
+/* Responsive design for mobile - we'll handle this later */
+@media (max-width: 768px) {
+  .nav-menu {
+    gap: 1rem;
+  }
+}
